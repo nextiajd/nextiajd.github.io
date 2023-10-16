@@ -1,0 +1,230 @@
+
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="robots" content="noindex">
+
+  <title>NextiaJD</title>
+
+  <link rel="stylesheet" href="public/dtim.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+  <!-- <scri2pt src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+  <script src="https://kit.fontawesome.com/92dab46df1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="public/styles.css">
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="container">
+
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="public/nextia_logo.png" height="30" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#resources">Resources</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#reproducibility">Reproducibility</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#demonstration">Demonstration</a>
+        </li>
+
+<!--        <li class="nav-item">
+          <a class="nav-link" href="#acknowledgements">Acknowledgements</a>
+        </li>
+-->
+    </div>
+  </nav>
+<br>
+	<div class="jumbotron" style="padding: 1.5em 1.5em; font-size: larger">
+    <h1><img src="public/nextia_logo.png" height="60" />: Scalable Data Discovery Using Profiles</h1>
+    <p class="text-justify">
+      Nextia<sub>JD</sub> is a system that supports data discovery over data lakes (i.e., large scale heterogeneous data repositories). This website is a companion of the research papers revolving around this project. Nextia<sub>JD</sub>'s novelty lies on a learning-based approach to data discovery relying on dataset profiles. These are succinct representations that capture the underlying characteristics of the schemata and data values of datasets, which can be efficiently extracted in a parallel and distributed fashion. Profiles are then compared, to predict the quality of a join operation among a pair of attributes from different datasets. 
+    </p>
+	</div>
+
+
+  <div class="bs-docs-section" id="people">
+    <h1>Disclaimer</h1>
+    <p>This is an anonymized version of the original website that complies with SIGMOD's 2024 double-blind review requirements. No details on participants, or past publications are provided.</p>
+    <p>Links to Github pages have been processed using the <a href="https://anonymous.4open.science/" target="_blank">Anonymous GitHub</a> service.</p>
+  <hr>
+  <div class="bs-docs-section" id="resources">
+    <h1>Resources</h1>
+    <h3>Software repository</h3>
+      <p class="text-justify">
+        The source code of the system can be found in the following <a target="_blank" href="https://anonymous.4open.science/r/NextiaJD-D106/">Github repository</a>.
+      </p>
+      <p class="text-justify">The easy way to use NextiaJD is with Maven. For SBT just add the following dependency in your build.sbt</p>
+      <div class="alert alert-info" role="alert">
+        libraryDependencies += "edu.upc.essi.dtim.nextiajd" % "nextiajd_2.12" % "1.0.1"
+      </div>
+
+
+      <p>For more ways to add NextiaJD using Maven, please go <a href="https://search.maven.org/artifact/edu.upc.essi.dtim.nextiajd/nextiajd_2.12/1.0.1/jar">here</a> </p>
+
+      <p>You can check how to use NextiaJD in the anonymized GitHub repository or see the zeppelin notebook with an explanation step by step, see <a href="#demonstration">demonstration section</a> </p>
+      <!-- <p class="text-justify">
+        We additionally provide the compiled JARs for Apache Spark 3.0.1 and Scala 2.12. This files must be placed (and replace if necessary) in Spark's libraries directory of the driver and all workers.
+        <ul>
+          <li><a href="https://mydisk.cs.upc.edu/s/7wKRxp3DJTgQ7yb/download" target="_blank">Spark-NextiaJD</a></li>
+          <li><a href="https://mydisk.cs.upc.edu/s/B36NjoYC6LTP5GQ/download" target="_blank">SparkSQL</a></li>
+          <li><a href="https://mydisk.cs.upc.edu/s/j6KfLkgqxtprDod/download" target="_blank">Catalyst</a></li>
+        </ul>
+      </p> -->
+
+    <h3>Ground truth datasets</h3>
+      <p class="text-justify">
+        Datasets used in this work have been obtained from open data repositories with no copyright such as <a href="https://www.kaggle.com/" target="_blank">Kaggle</a> and <a href="https://www.openml.org/" target="_blank">OpenML</a>. The datasets used to generate both our ground truth and to evaluate our method are available in the following links:
+        <ul>
+          <li><a href="https://mydisk.cs.upc.edu/s/aNbnSiSfg5xan6W/download" target="_blank">Training dataset</a></li>
+          <li><a href="https://mydisk.cs.upc.edu/s/eCmfrNEBSKkcWcn/download" target="_blank">Testbed XS</a> (datasets with file size 0-1MB)</li>
+          <li><a href="https://mydisk.cs.upc.edu/s/dX3FajwWZn7rrrd/download" target="_blank">Testbed S</a> (datasets with file size 1-100MB)</li>
+          <li><a href="https://mydisk.cs.upc.edu/s/niPyR4WTtxydprj/download" target="_blank">Testbed M</a> (datasets with file size 100MB-1GB)</li>
+          <li><a href="https://mydisk.cs.upc.edu/s/4qoi76ziT2wJaCR/download" target="_blank">Testbed L</a> (datasets with file size >1GB)</li>
+        </ul>
+      </p>
+    <!--
+    <br><br>
+    <h3>Online version</h3>
+    An online version of ODIN is available as a service via the <a href="#">following link</a>. You can interact with the demo (see next section), using the credentials (username: demo, password: demo).
+    -->
+  </div>
+  <hr>
+  <div class="bs-docs-section" id="reproducibility">
+    <h1>Reproducibility</h1>
+    <p class="text-justify">
+      We believe in transparent and shareable research <a target="_blank" href="https://www.acm.org/publications/reproducibility">[1]</a>, <a target="_blank" href="http://db-reproducibility.seas.harvard.edu/">[2]</a>. Hence, we provide you with <a href="https://anonymous.4open.science/r/NextiaJD-D106/experiments/README.md" target="_blank">detailed instructions</a> on how to reproduce the experiments presented in our work:
+      <ul>
+          <li><a target="_blank" href="https://colab.research.google.com/drive/1kx3Mcv3ULwXv6NG_F8NO_vutm5nm3XU8?usp=sharing">Generalizability of our approach -- GitTables</a>
+          <li><a target="_blank" href="https://anonymous.4open.science/r/valentine-extended-478D/">Comparison with the state-of-the-art (predictive performance) -- Valentine suite</a></li>
+          <li><a target="_blank" href="https://anonymous.4open.science/r/NextiaJD-D106/experiments/README.md">Comparison with the state-of-the-art (runtime performance)</a></li>
+          <li><a target="_blank" href="https://anonymous.4open.science/r/NextiaJD-D106/experiments/Scalability/README.md">Scalability</a></li>
+    </p>
+  </div>
+  <hr>
+  <div class="bs-docs-section" id="demonstration">
+    <h1>Demonstration</h1>
+<br>
+      <p>We provide NextiaJD in two modes of functioning: a) as a standalone Pickle ML model that can be integrated into any Python application, and b) as an Apache Spark extension.</p>
+
+      <h3>Standalone Pickle model</h3>
+      <p>We provide the learning model that, given a vector of profile distances, provides the predicted join quality for a pair of attributes.</p>
+      <p class="text-justify">In the <a href="https://anonymous.4open.science/r/NextiaJD-D106/NextiaJDService/README.md" target="_blank">following Github repository</a>, we provide an API that wrap's NextiaJD's services so they can be used from other programming languages (e.g., Python) invoking the command via terminal. These are required to compute the profiles and their distances.</p>
+      <h4>ML Model</h4>
+      <p class="text-justify">The model can be downloaded from the <a href="https://mydisk.cs.upc.edu/s/aBHZXg9ef38K34D/download/ML_Best_model.pkl" target="_blank">following link</a> (see the <a href="https://colab.research.google.com/drive/1kx3Mcv3ULwXv6NG_F8NO_vutm5nm3XU8?usp=sharing" target="_blank">following link</a> for more details on how to use it).</p>
+    <h3>Apache Spark extension</h3>
+    <p>  Live demos of NextiaJD are available as Zeppelin notebooks. Bear in mind that, <b>in order to access them you must first login</b> with the following credentials (user: <b>user1</b>, password: <b>nextiajd</b>).
+</p>
+    <h4>Interactive GUI</h4>
+      <p class="text-justify">
+        A live demo of the user interface is available <a target="_blank" href="http://quarry.essi.upc.edu:8081/#/notebook/2G9CMU9C4">here</a>.
+      </p>
+
+    <h4>Library usage</h4>
+      <p class="text-justify">
+        We also provide with a code-oriented demo showcasing how proficient data analysts can take full benefit of our tool <a target="_blank" href="http://quarry.essi.upc.edu:8081/#/notebook/2FZ5HCMJQ">here</a>.
+      </p>
+    <h3>Videos</h3>
+    <div class="row justify-content-center">
+       <video width="100%" controls>
+        <source src="https://mydisk.cs.upc.edu/s/wa4FmPM9NxNWWb7/download/NextiaJD_demonstration.mp4" type="video/mp4">
+      </video>
+   </div>
+
+  </div>
+
+
+<!--  <div class="bs-docs-section" id="acknowledgements">
+    <h1>Acknowledgements</h1>
+    <p>
+      TBA
+    </p>
+  </div>
+-->
+<!-- Modal -->
+<div class="modal" id="videoModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <!-- <div class="modal-header bg-dark border-dark">
+                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
+            </div> -->
+            <div class="modal-body bg-dark p-0">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="modal" tabindex="-1" id="videoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+  <hr>
+  <p>Last update: hidden for double-blind reviews
+</div>
+<script>
+$(document).ready(function() {
+    // Set iframe attributes when the show instance method is called
+    $("#videoModal").on("show.bs.modal", function(event) {
+
+        console.log("ebte");
+        let button = $(event.relatedTarget); // Button that triggered the modal
+        let url = button.data("video");      // Extract url from data-video attribute
+        $(this).find("iframe").attr({
+            src : url,
+            allow : "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        });
+    });
+
+    // Remove iframe attributes when the modal has finished being hidden from the user
+    $("#videoModal").on("hidden.bs.modal", function() {
+        $("#videoModal iframe").removeAttr("src allow");
+    });
+});
+</script>
+
+</body>
+</html>
