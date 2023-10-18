@@ -1,5 +1,3 @@
-
-
 <html lang="en">
 
 <head>
@@ -51,11 +49,6 @@
         <li class="nav-item">
           <a class="nav-link" href="#demonstration">Demonstration</a>
         </li>
-
-<!--        <li class="nav-item">
-          <a class="nav-link" href="#acknowledgements">Acknowledgements</a>
-        </li>
--->
     </div>
   </nav>
 <br>
@@ -80,38 +73,23 @@
       </p>
       <p class="text-justify">The easy way to use NextiaJD is with Maven. For SBT just add the following dependency in your build.sbt</p>
       <div class="alert alert-info" role="alert">
-        libraryDependencies += "edu.upc.essi.dtim.nextiajd" % "nextiajd_2.12" % "1.0.1"
+        Hidden due to double-anonymity requirements.
       </div>
 
-
-      <p>For more ways to add NextiaJD using Maven, please go <a href="https://search.maven.org/artifact/edu.upc.essi.dtim.nextiajd/nextiajd_2.12/1.0.1/jar">here</a> </p>
-
       <p>You can check how to use NextiaJD in the anonymized GitHub repository or see the zeppelin notebook with an explanation step by step, see <a href="#demonstration">demonstration section</a> </p>
-      <!-- <p class="text-justify">
-        We additionally provide the compiled JARs for Apache Spark 3.0.1 and Scala 2.12. This files must be placed (and replace if necessary) in Spark's libraries directory of the driver and all workers.
-        <ul>
-          <li><a href="https://mydisk.cs.upc.edu/s/7wKRxp3DJTgQ7yb/download" target="_blank">Spark-NextiaJD</a></li>
-          <li><a href="https://mydisk.cs.upc.edu/s/B36NjoYC6LTP5GQ/download" target="_blank">SparkSQL</a></li>
-          <li><a href="https://mydisk.cs.upc.edu/s/j6KfLkgqxtprDod/download" target="_blank">Catalyst</a></li>
-        </ul>
-      </p> -->
 
     <h3>Ground truth datasets</h3>
       <p class="text-justify">
         Datasets used in this work have been obtained from open data repositories with no copyright such as <a href="https://www.kaggle.com/" target="_blank">Kaggle</a> and <a href="https://www.openml.org/" target="_blank">OpenML</a>. The datasets used to generate both our ground truth and to evaluate our method are available in the following links:
         <ul>
-          <li><a href="https://mydisk.cs.upc.edu/s/aNbnSiSfg5xan6W/download" target="_blank">Training dataset</a></li>
-          <li><a href="https://mydisk.cs.upc.edu/s/eCmfrNEBSKkcWcn/download" target="_blank">Testbed XS</a> (datasets with file size 0-1MB)</li>
-          <li><a href="https://mydisk.cs.upc.edu/s/dX3FajwWZn7rrrd/download" target="_blank">Testbed S</a> (datasets with file size 1-100MB)</li>
-          <li><a href="https://mydisk.cs.upc.edu/s/niPyR4WTtxydprj/download" target="_blank">Testbed M</a> (datasets with file size 100MB-1GB)</li>
-          <li><a href="https://mydisk.cs.upc.edu/s/4qoi76ziT2wJaCR/download" target="_blank">Testbed L</a> (datasets with file size >1GB)</li>
+          <li><a href="https://shorturl.at/amACS" target="_blank">Training dataset</a></li>
+          <li><a href="https://shorturl.at/ekpCK" target="_blank">Testbed XS</a> (datasets with file size 0-1MB)</li>
+          <li><a href="https://shorturl.at/tGSW5" target="_blank">Testbed S</a> (datasets with file size 1-100MB)</li>
+          <li><a href="https://shorturl.at/ejmnO" target="_blank">Testbed M</a> (datasets with file size 100MB-1GB)</li>
+          <li><a href="https://shorturl.at/yIMY5" target="_blank">Testbed L</a> (datasets with file size >1GB)</li>
         </ul>
       </p>
-    <!--
-    <br><br>
-    <h3>Online version</h3>
-    An online version of ODIN is available as a service via the <a href="#">following link</a>. You can interact with the demo (see next section), using the credentials (username: demo, password: demo).
-    -->
+
   </div>
   <hr>
   <div class="bs-docs-section" id="reproducibility">
@@ -135,71 +113,23 @@
       <p>We provide the learning model that, given a vector of profile distances, provides the predicted join quality for a pair of attributes.</p>
       <p class="text-justify">In the <a href="https://anonymous.4open.science/r/NextiaJD-D106/NextiaJDService/README.md" target="_blank">following Github repository</a>, we provide an API that wrap's NextiaJD's services so they can be used from other programming languages (e.g., Python) invoking the command via terminal. These are required to compute the profiles and their distances.</p>
       <h4>ML Model</h4>
-      <p class="text-justify">The model can be downloaded from the <a href="https://mydisk.cs.upc.edu/s/aBHZXg9ef38K34D/download/ML_Best_model.pkl" target="_blank">following link</a> (see the <a href="https://colab.research.google.com/drive/1kx3Mcv3ULwXv6NG_F8NO_vutm5nm3XU8?usp=sharing" target="_blank">following link</a> for more details on how to use it).</p>
+      <p class="text-justify">The model can be downloaded from the <a href="https://t.ly/q2FSG" target="_blank">following link</a> (see the <a href="https://colab.research.google.com/drive/1kx3Mcv3ULwXv6NG_F8NO_vutm5nm3XU8?usp=sharing" target="_blank">following link</a> for more details on how to use it).</p>
     <h3>Apache Spark extension</h3>
     <p>  Live demos of NextiaJD are available as Zeppelin notebooks. Bear in mind that, <b>in order to access them you must first login</b> with the following credentials (user: <b>user1</b>, password: <b>nextiajd</b>).
 </p>
     <h4>Interactive GUI</h4>
       <p class="text-justify">
-        A live demo of the user interface is available <a target="_blank" href="http://quarry.essi.upc.edu:8081/#/notebook/2G9CMU9C4">here</a>.
+        A live demo of the user interface is available <a target="_blank" href="https://t.ly/TWu59">here</a>.
       </p>
 
-    <h4>Library usage</h4>
-      <p class="text-justify">
-        We also provide with a code-oriented demo showcasing how proficient data analysts can take full benefit of our tool <a target="_blank" href="http://quarry.essi.upc.edu:8081/#/notebook/2FZ5HCMJQ">here</a>.
-      </p>
     <h3>Videos</h3>
     <div class="row justify-content-center">
        <video width="100%" controls>
-        <source src="https://mydisk.cs.upc.edu/s/wa4FmPM9NxNWWb7/download/NextiaJD_demonstration.mp4" type="video/mp4">
+        <source src="https://t.ly/b7ITT" type="video/mp4">
       </video>
    </div>
 
   </div>
-
-
-<!--  <div class="bs-docs-section" id="acknowledgements">
-    <h1>Acknowledgements</h1>
-    <p>
-      TBA
-    </p>
-  </div>
--->
-<!-- Modal -->
-<div class="modal" id="videoModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <!-- <div class="modal-header bg-dark border-dark">
-                <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
-            </div> -->
-            <div class="modal-body bg-dark p-0">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe class="embed-responsive-item" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- <div class="modal" tabindex="-1" id="videoModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <p>Modal body text goes here.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
 
 
   <hr>
